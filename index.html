@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <title>Melengkapi Angka!</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #be8c63;
+      }
+      .header {
+        color: white;
+      }
+      .label1 {
+        color: white;
+        font-weight: bold;
+        padding: 2rem;
+      }
+      .label2 {
+        color: white;
+        font-weight: bold;
+        font-size: 50px;
+        padding: 0.5rem;
+      }
+      h2 {
+        font-weight: bold;
+      }
+      .input-disabled {
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        width: 100px;
+        color: #545454;
+      }
+      #submit {
+        background: #0074e4;
+        color: white;
+        border: 0;
+        padding: 0.5rem 1rem;
+        border-radius: 0.2rem;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+      table {
+        background: #2d4263;
+        width: 400px;
+        border-radius: 20%;
+      }
+      button {
+        align-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <br /><br /><br />
+    <form action="" method="post">
+      <table align="center" class="shadow-lg p-3 mb-5">
+        <tr>
+          <td colspan="3" class="header text-center">
+            <img src="img/smile.gif" width="70px" alt="" />
+            <h2 class="mt-2">Latih Berhitung</h2>
+            <li>Operator Penambahan</li>
+            <li>Operator Pengurangan</li>
+            <!-- <p>Lengkapi Kolom Yang Kosong Untuk,</p>
+            <p>Mendapatkan Hasil Yang benar !</p> -->
+          </td>
+        </tr>
+        <tr>
+          <td class="label1">Masukan Angka</td>
+          <td><input type="number" id="number1" class="input-disabled mr-1" required /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="number" id="number2" class="input-disabled no-border" required /><label id="operator" class="label2">+</label></td>
+        </tr>
+
+        <tr>
+          <td class="label1">Hasilnya</td>
+          <td><input type="number" id="total" class="input-disabled no-border" /></td>
+        </tr>
+        <tr class="text-center">
+          <td colspan="3">
+            <button id="submit" type="button" class="btn btn-primary btn-sm mb-3">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script src="hitung.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
